@@ -1,0 +1,14 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.innerContainer {
+    padding: 2% 2% 2% 2%;
+    border-radius: 5vh;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    z-index: 1;
+}

@@ -1,0 +1,20 @@
+.mainWrapper {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    gap: 5%;
+}
+
+.leftSection {
+    width: 30%;
+    height: 100vh;
+}
+
+.rightSection {
+    width: 70%;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 10vh;
+}

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 5vh;
+}
+
+.linkContainer {
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.linkText {
+    font-size: 20px;
+    color: gray;
+}
+
+.link {
+    font-size: 20px
+}

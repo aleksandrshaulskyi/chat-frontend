@@ -1,0 +1,30 @@
+.foundUserContainer {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+.foundUserImageContainer {
+    height: 5vh;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foundUserImage {
+    width: 100%;
+    height: 100%;
+}
+
+.foundUserUsername {
+    font-size: 20px;
+    margin-left: 4%;
+}

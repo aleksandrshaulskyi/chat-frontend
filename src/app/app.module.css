@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'BloggerSansLight';
+	src: url('../fonts/blogger-sans.light.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'BloggerSansRegular';
+	src: url('../fonts/blogger-sans.regular.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'BloggerSansMedium';
+	src: url('../fonts/blogger-sans.medium.ttf') format('truetype')
+}
+
+.main {
+    font-family: 'BloggerSansMedium', sans-serif;
+	overflow-y: hidden;
+	background: url('../media/background.jpg');
+	z-index: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	margin: 0;
+}

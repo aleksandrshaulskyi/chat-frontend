@@ -1,0 +1,65 @@
+.messageContainerRight {
+    margin-top: 1vh;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+    background-color: white;
+    width: 40%;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 2.5vh;
+    background: linear-gradient(45deg, #ffdde8, #f0ccff);
+}
+
+.messageContainerLeft {
+    margin-top: 1vh;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    background-color: white;
+    width: 40%;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 2.5vh;
+    background: linear-gradient(45deg, #ff9abd, #dba3ff);
+}
+
+.messageDataContainer {
+    width: 92%;
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.senderProfileContainer {
+    height: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3%;
+}
+
+.senderAvatarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.senderAvatar {
+    height: 100%;
+    width: 100%;
+}
+
+.messageBody {
+    margin: 5% 4% 5% 4%;
+}

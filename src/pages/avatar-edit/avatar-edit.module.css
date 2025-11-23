@@ -1,0 +1,11 @@
+.backwardsIconContainer {
+    position: absolute;
+    width: 2.5%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.backwardsIcon {
+    width: 100%;
+    height: 100%;
+}

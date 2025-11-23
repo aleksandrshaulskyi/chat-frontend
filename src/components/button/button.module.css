@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+.activeButton {
+    width: 170px;
+    height: 7vh;
+    background: none;
+    border: 2px solid black;
+    border-radius: 3.5vh;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    font-family: 'BloggerSansMedium';
+    
+}
+
+.inactiveButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 7vh;
+    background: none;
+    border: 2px solid gray;
+    border-radius: 3.5vh;
+    outline: none;
+    color: gray;
+    font-family: 'BloggerSansMedium';
+}
+
+.activeButton:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.inactiveSpan {
+    display: none;
+}
+
+.visibleText {
+    font-size: 20px;
+}
+
+.invisibleText {
+    display: none;
+}
