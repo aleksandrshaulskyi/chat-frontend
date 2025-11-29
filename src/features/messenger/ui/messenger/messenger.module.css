@@ -59,7 +59,7 @@
     inset: -4px;
     background: linear-gradient(var(--angle), var(--color1), var(--color2));
     animation: borderFlow 1s linear infinite;
-    border-radius: 2.5vh;
+    border-radius: calc(2.5vh + 4px);
     opacity: 1;
 }
 
@@ -70,7 +70,7 @@
     inset: -5px;
     background: linear-gradient(var(--angle), var(--color1), var(--color2));
     animation: borderFlow 1s linear infinite;
-    border-radius: 2.5vh;
+    border-radius: calc(2.5vh + 4px);
     opacity: 0;
 }
 
@@ -103,11 +103,21 @@
 
 .messagesContainer {
     width: 100%;
-    overflow-y: auto;
+    min-height: 0;
+    overflow-y: auto; /* Включаем прокрутку здесь */
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
 }
 
 .messagesContainer::-webkit-scrollbar {
     display: none;
+}
+
+.messagesListWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 }
 
 .inputContainer {

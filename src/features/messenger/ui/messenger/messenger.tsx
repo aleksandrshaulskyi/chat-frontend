@@ -150,6 +150,16 @@ export function Messenger(): ReactElement {
             setMessage('')
 
             if(textAreaRef && textAreaRef.current) textAreaRef.current.value = ''
+
+            const messagesContainer = messagesContainerRef.current
+
+            if (messagesContainer) {
+                requestAnimationFrame(
+                    () => {
+                        messagesContainer.scrollTop = messagesContainer.scrollHeight
+                    }
+                )
+            }
         }
     }
 
@@ -186,15 +196,17 @@ export function Messenger(): ReactElement {
         <div className={animatedLoadingClassName}>
             <div className={containerClassName}>
                 <div className={MessengerStyling.messagesContainer} ref={messagesContainerRef}>
-                    {
-                        messagesProcessed && (
-                            messagesProcessed.map(
-                                messageProcessed => (
-                                    <Message key={messageProcessed.client_message_id} {...messageProcessed} currentUserId={currentUserId}/>
+                    <div className={MessengerStyling.messagesListWrapper}>
+                        {
+                            messagesProcessed && (
+                                messagesProcessed.map(
+                                    messageProcessed => (
+                                        <Message key={messageProcessed.client_message_id} {...messageProcessed} currentUserId={currentUserId}/>
+                                    )
                                 )
                             )
-                        )
-                    }
+                        }
+                    </div>
                 </div>
                 <div className={MessengerStyling.inputContainer}>
                     <textarea className={MessengerStyling.messageTextArea} onInput={handleChange} ref={textAreaRef}></textarea>

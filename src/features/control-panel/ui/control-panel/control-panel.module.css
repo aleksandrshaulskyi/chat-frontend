@@ -59,7 +59,7 @@
     inset: -4px;
     background: linear-gradient(var(--angle), var(--color1), var(--color2));
     animation: borderFlow 1s linear infinite;
-    border-radius: 2.5vh;
+    border-radius: calc(2.5vh + 4px);
     opacity: 1;
 }
 
@@ -70,7 +70,7 @@
     inset: -5px;
     background: linear-gradient(var(--angle), var(--color1), var(--color2));
     animation: borderFlow 1s linear infinite;
-    border-radius: 2.5vh;
+    border-radius: calc(2.5vh + 4px);
     opacity: 0;
 }
 

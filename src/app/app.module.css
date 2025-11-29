@@ -13,11 +13,21 @@
 	src: url('../fonts/blogger-sans.medium.ttf') format('truetype')
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .main {
     font-family: 'BloggerSansMedium', sans-serif;
 	overflow-y: hidden;
 	background: url('../media/background.jpg');
+	background-size: cover;
 	z-index: 0;
+	overscroll-behavior: none;
+	-webkit-overflow-scrolling: auto;
 }
 
 a {
